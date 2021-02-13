@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="filtroPokemon.name" placeholder="Search Pokemon" id="search-character" name="search-character" /> 
+<div *ngFor="let pokemon of pokemons | filterBy: filtroPokemon ">
+    
+  <p>{{pokemon.name}}</p>
+<img src="{{pokemon.sprites.front_default}}">
+</div>
